@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Image Viwer Controller-->
+        <scene sceneID="IYN-FM-kU2">
+            <objects>
+                <viewController storyboardIdentifier="ImageViwerController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BdN-4i-UEe" customClass="ImageViwerController" customModule="PFXFloMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hXf-md-wAV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xKc-yY-9wD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mr-Fc-PJW">
+                                <rect key="frame" x="324" y="20" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="jtT-Fz-u7h"/>
+                                    <constraint firstAttribute="height" constant="35" id="ux9-rp-krM"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="xmark.circle" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xKc-yY-9wD" firstAttribute="trailing" secondItem="5RJ-sr-JeT" secondAttribute="trailing" id="0Gp-TY-mNd"/>
+                            <constraint firstItem="5RJ-sr-JeT" firstAttribute="trailing" secondItem="2mr-Fc-PJW" secondAttribute="trailing" constant="16" id="703-cD-8Al"/>
+                            <constraint firstItem="xKc-yY-9wD" firstAttribute="leading" secondItem="5RJ-sr-JeT" secondAttribute="leading" id="Bo5-Eq-Q0m"/>
+                            <constraint firstItem="2mr-Fc-PJW" firstAttribute="top" secondItem="5RJ-sr-JeT" secondAttribute="top" constant="20" id="T7p-h5-uSb"/>
+                            <constraint firstItem="xKc-yY-9wD" firstAttribute="top" secondItem="5RJ-sr-JeT" secondAttribute="top" id="e4b-pg-aic"/>
+                            <constraint firstItem="xKc-yY-9wD" firstAttribute="bottom" secondItem="5RJ-sr-JeT" secondAttribute="bottom" id="fPP-Wd-vJ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5RJ-sr-JeT"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="2mr-Fc-PJW" id="WDM-S0-0hD"/>
+                        <outlet property="imageView" destination="xKc-yY-9wD" id="bok-8W-TOf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyw-NL-fLz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="170.46476761619192"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

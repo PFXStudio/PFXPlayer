@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Singer View Controller-->
+        <scene sceneID="FLl-FV-Kvt">
+            <objects>
+                <viewController storyboardIdentifier="SingerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fce-La-YKM" customClass="SingerViewController" customModule="PFXFloMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uun-Zg-dj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6j-6E-s0U">
+                                <rect key="frame" x="324" y="20" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="PDn-3T-DUj"/>
+                                    <constraint firstAttribute="width" constant="35" id="wh8-ld-gqn"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="xmark.circle" catalog="system"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY6-S0-2IX">
+                                <rect key="frame" x="16" y="27" width="300" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6GM-gM-0og"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PY6-S0-2IX" firstAttribute="leading" secondItem="Bjt-Pa-FBi" secondAttribute="leading" constant="16" id="FiM-PU-bex"/>
+                            <constraint firstItem="A6j-6E-s0U" firstAttribute="leading" secondItem="PY6-S0-2IX" secondAttribute="trailing" constant="8" id="Spd-vN-WeP"/>
+                            <constraint firstItem="A6j-6E-s0U" firstAttribute="top" secondItem="Bjt-Pa-FBi" secondAttribute="top" constant="20" id="U4I-VG-Y1f"/>
+                            <constraint firstItem="Bjt-Pa-FBi" firstAttribute="trailing" secondItem="A6j-6E-s0U" secondAttribute="trailing" constant="16" id="cax-a1-FtD"/>
+                            <constraint firstItem="PY6-S0-2IX" firstAttribute="top" secondItem="Bjt-Pa-FBi" secondAttribute="top" constant="27" id="vEt-Vt-Wod"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bjt-Pa-FBi"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="A6j-6E-s0U" id="eVt-3D-vZ6"/>
+                        <outlet property="singerLabel" destination="PY6-S0-2IX" id="or0-vx-Vci"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNs-Ow-zgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="155.17241379310346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

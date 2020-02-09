@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+target 'PFXPlayer' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for PFXPlayer
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxAlamofire'
+  pod 'RxDataSources'
+  pod 'RxOptional'
+  pod "RxGesture"
+  pod "RxAnimated"
+  pod 'Nuke'
+  pod 'Hero'
+  pod 'MarqueeLabel'
+  pod 'NVActivityIndicatorView'
+
+  target 'PFXPlayerTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'PFXPlayerUITests' do
+    # Pods for testing
+  end
+
+end
