@@ -2,12 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/succorer/Sourcetree/PFXStudio.github/PFXPlayer.github/PFXPlayer/PFXPlayer.xcodeproj">
+      location = "group:PFXPlayer.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:PFXPlayer.xcodeproj">
    </FileRef>
 </Workspace>
