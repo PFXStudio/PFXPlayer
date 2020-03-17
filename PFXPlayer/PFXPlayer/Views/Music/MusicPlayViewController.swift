@@ -48,7 +48,8 @@ class MusicPlayViewController: UIViewController {
         
         panGesture
             .when(.changed)
-            .subscribe(onNext: { (recognizer) in
+            .subscribe(onNext: { [weak self] (recognizer) in
+                guard let self = self else { return }
                 let point = recognizer.location(in: self.dragView)
                 let x = Int(point.x)
                 let size = self.dragView.frame.size
@@ -73,7 +74,8 @@ class MusicPlayViewController: UIViewController {
         tapGesture
             .when(.recognized)
             .asLocation()
-            .subscribe(onNext: { (point) in
+            .subscribe(onNext: { [weak self] (point) in
+                guard let self = self else { return }
                 let x = Int(point.x)
                 let size = self.dragView.frame.size
                 let width = Int(size.width)

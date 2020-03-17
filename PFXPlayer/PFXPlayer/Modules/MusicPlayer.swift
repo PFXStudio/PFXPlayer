@@ -169,7 +169,8 @@ class MusicPlayer: MusicPlayerProtocol {
         audioPlayer.play()
         self.disposeBag = DisposeBag()
         self.timer
-            .subscribe(onNext: { [unowned self] tick in
+            .subscribe(onNext: { [weak self] tick in
+                guard let self = self else { return }
                 let millisecond = Int(audioPlayer.currentTime * 1000)
                 if millisecond >= musicModel.duration {
                     self.stop()

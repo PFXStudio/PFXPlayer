@@ -19,7 +19,8 @@ class MusicNavigationController: UINavigationController {
         super.viewDidLoad()
         
         self.topBottomSubject
-            .subscribe(onNext: { isTop in
+            .subscribe(onNext: { [weak self] isTop in
+                guard let self = self else { return }
                 // top is show
                 UIView.animate(withDuration: 2) {
                     self.navigationBar.isHidden = !isTop

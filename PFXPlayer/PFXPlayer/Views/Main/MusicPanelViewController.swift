@@ -37,7 +37,8 @@ class MusicPanelViewController: UIViewController, NVActivityIndicatorViewable {
         panGesture
             .when(.changed)
             .asTranslation()
-            .subscribe(onNext: { [unowned self] translation, _ in
+            .subscribe(onNext: { [weak self] translation, _ in
+                guard let self = self else { return }
                 if self.translations.count >= self.maxCheckCount {
                     self.translations.removeFirst()
                 }
@@ -59,7 +60,8 @@ class MusicPanelViewController: UIViewController, NVActivityIndicatorViewable {
         panGesture
             .when(.ended)
             .asTranslation()
-            .subscribe(onNext: { [unowned self] translation, _ in
+            .subscribe(onNext: { [weak self] translation, _ in
+                guard let self = self else { return }
                 var resultFunction: () -> () = self.moveToNear
                 defer {
                     self.translations.removeAll()

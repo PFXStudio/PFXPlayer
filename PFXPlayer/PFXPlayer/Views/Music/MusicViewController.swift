@@ -68,7 +68,8 @@ class MusicViewController: UIViewController {
 extension MusicViewController {
     func bindTopBottomSubject() {
         self.topBottomSubject
-            .subscribe(onNext: { isTop in
+            .subscribe(onNext: { [weak self] isTop in
+                guard let self = self else { return }
                 // top is show
                 UIView.animate(withDuration: 1) {
                     if isTop == true {

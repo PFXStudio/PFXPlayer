@@ -65,7 +65,8 @@ class MainViewController: UIViewController {
         }
         
         self.MusicPanelViewController = destination
-        self.MusicPanelViewController?.bottomSubject.subscribe(onNext: { (isBottom) in
+        self.MusicPanelViewController?.bottomSubject.subscribe(onNext: { [weak self] (isBottom) in
+            guard let self = self else { return }
             UIView.animate(withDuration: CommonValues.playPanelAnimationDuration) {
                 if isBottom == true {
                     self.bottomLayoutConstraint.constant = 0

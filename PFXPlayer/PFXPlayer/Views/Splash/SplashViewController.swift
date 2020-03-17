@@ -19,7 +19,8 @@ class SplashViewController: UIViewController {
         
         Observable.just("")
             .delay(RxTimeInterval.seconds(1), scheduler: MainScheduler.instance)
-            .subscribe(onNext: { _ in
+            .subscribe(onNext: { [weak self] _ in
+                guard let self = self else { return }
                 let mainViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: String(describing: MainViewController.self))
                 mainViewController.modalPresentationStyle = .fullScreen
                 mainViewController.modalTransitionStyle = .crossDissolve

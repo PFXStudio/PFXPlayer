@@ -135,7 +135,8 @@ extension LyricsViewController {
         controller.viewModel.autoScroll
             .asObservable()
             .subscribeOn(MainScheduler.instance)
-            .subscribe(onNext: { isAuto in
+            .subscribe(onNext: { [weak self] isAuto in
+                guard let self = self else { return }
                 self.currentButton.isEnabled = !isAuto
             }, onError: { error in
                     print(error)

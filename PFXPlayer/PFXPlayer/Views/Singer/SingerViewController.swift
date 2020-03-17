@@ -36,7 +36,8 @@ class SingerViewController: UIViewController {
         .disposed(by: self.disposeBag)
         
         self.viewModel.coverViewModelData.asObservable().subscribeOn(MainScheduler.instance)
-            .subscribe(onNext: { coverViewModel in
+            .subscribe(onNext: { [weak self] coverViewModel in
+                guard let self = self else { return }
                 self.singerLabel.text = coverViewModel.singer
             })
             .disposed(by: self.disposeBag)

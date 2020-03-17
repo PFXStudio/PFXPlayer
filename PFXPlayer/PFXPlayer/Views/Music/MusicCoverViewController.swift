@@ -62,7 +62,7 @@ extension MusicCoverViewController {
                     return
                 }
                 
-                guard let controller = UIStoryboard.init(name: "Viewer", bundle: nil).instantiateViewController(identifier: String(describing: ImageViwerController.self)) as? ImageViwerController else {
+                guard let controller = UIStoryboard.init(name: "Viewer", bundle: nil).instantiateViewController(identifier: String(describing: ImageViewerController.self)) as? ImageViewerController else {
                     return
                 }
                 

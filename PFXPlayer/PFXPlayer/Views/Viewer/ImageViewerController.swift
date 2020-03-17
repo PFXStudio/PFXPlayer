@@ -12,7 +12,7 @@ import WebKit
 import RxSwift
 import Nuke
 
-class ImageViwerController: UIViewController {
+class ImageViewerController: UIViewController {
     
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!

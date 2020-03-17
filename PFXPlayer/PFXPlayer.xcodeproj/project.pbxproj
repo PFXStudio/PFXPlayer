@@ -16,7 +16,7 @@
 		D202C42623E452C700C27532 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D202C42423E452C700C27532 /* LaunchScreen.storyboard */; };
 		D202C43123E452C700C27532 /* PFXFloMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202C43023E452C700C27532 /* PFXFloMusicTests.swift */; };
 		D202C43C23E452C700C27532 /* PFXFloMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202C43B23E452C700C27532 /* PFXFloMusicUITests.swift */; };
-		D211AB3C23E9B55B003B85B2 /* ImageViwerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211AB3B23E9B55B003B85B2 /* ImageViwerController.swift */; };
+		D211AB3C23E9B55B003B85B2 /* ImageViewerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D211AB3B23E9B55B003B85B2 /* ImageViewerController.swift */; };
 		D211AB3E23E9B5A7003B85B2 /* Viewer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D211AB3D23E9B5A7003B85B2 /* Viewer.storyboard */; };
 		D23AD7B423EA2D2400F22E43 /* MusicViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23AD7B323EA2D2300F22E43 /* MusicViewModel.swift */; };
 		D26B321423E46B7600FC8B9E /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26B321323E46B7600FC8B9E /* SplashViewController.swift */; };
@@ -98,7 +98,7 @@
 		D202C43723E452C700C27532 /* PFXPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PFXPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D202C43B23E452C700C27532 /* PFXFloMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFXFloMusicUITests.swift; sourceTree = "<group>"; };
 		D202C43D23E452C700C27532 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D211AB3B23E9B55B003B85B2 /* ImageViwerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViwerController.swift; sourceTree = "<group>"; };
+		D211AB3B23E9B55B003B85B2 /* ImageViewerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewerController.swift; sourceTree = "<group>"; };
 		D211AB3D23E9B5A7003B85B2 /* Viewer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Viewer.storyboard; sourceTree = "<group>"; };
 		D23AD7B323EA2D2300F22E43 /* MusicViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewModel.swift; sourceTree = "<group>"; };
 		D26B321323E46B7600FC8B9E /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -255,7 +255,7 @@
 			isa = PBXGroup;
 			children = (
 				D211AB3D23E9B5A7003B85B2 /* Viewer.storyboard */,
-				D211AB3B23E9B55B003B85B2 /* ImageViwerController.swift */,
+				D211AB3B23E9B55B003B85B2 /* ImageViewerController.swift */,
 			);
 			path = Viewer;
 			sourceTree = "<group>";
@@ -638,7 +638,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D28E0B3E23E6A92D0074C73C /* MusicPlayer.swift in Sources */,
-				D211AB3C23E9B55B003B85B2 /* ImageViwerController.swift in Sources */,
+				D211AB3C23E9B55B003B85B2 /* ImageViewerController.swift in Sources */,
 				D2733F3A23E6FDA300A51218 /* PlayModel.swift in Sources */,
 				D28E0B3823E6909A0074C73C /* LyricsCell.swift in Sources */,
 				D202C42123E452C600C27532 /* PFXFloMusic.xcdatamodeld in Sources */,
